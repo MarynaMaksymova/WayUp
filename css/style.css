@@ -1,0 +1,309 @@
+body {
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Ubuntu', sans-serif;
+	overflow-x: hidden;
+}
+
+div, p, input, button, form, span, a, ul, li {
+	box-sizing: border-box;
+}
+
+p {
+	margin: 0;
+}
+
+.conteiner {
+	 width: 1170px;
+	 margin: 0 auto;
+	 /*border: 3px solid red;*/
+}
+
+h1, h2, h3 {
+	margin: 0;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: bold;
+	color: black;
+	}
+
+/* head section */
+
+.header {
+	background-color: background: -webkit-linear-gradient(135deg, rgb(78, 191, 254), rgb(55, 143, 217));
+	background: -moz-linear-gradient(135deg, rgb(78, 191, 254), rgb(55, 143, 217));
+	background: linear-gradient(135deg, rgb(78, 191, 254), rgb(55, 143, 217));
+	padding: 62px 0;
+	color: #fff;
+}
+
+.wrapper{
+	display: flex;
+	justify-content: space-between;
+	align-items:center; 
+}
+
+.offer { 
+	width: 570px;
+	margin-top 140px;
+}
+
+.offer h1 {
+	font-size: 37px;
+	margin-bottom: 47px;
+	line-height: 49px;
+	color: white;
+}
+
+.offer h1 span {
+	font-size: 59px;
+}
+
+.offer p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	line-height: 27px;
+	margin-bottom: 45px;
+	width: 400px;
+}
+
+.btn {
+	background: #ffd429;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	color: #2e2a1b;
+	padding: 20px 5px;
+	width: 222px;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.5s ease;
+	font-weight: 900;
+}
+
+.btn:hover {
+	background: #987c0e;
+}
+
+.cases {
+	margin-top: 25px;
+	margin-right: -60px;
+}
+
+/* second section*/
+
+.future-section {
+	padding-top: 100px;
+	padding-bottom: 120px;
+}
+
+.section-title {
+	text-align: center;
+	font-size: 30px;
+	line-height: 25px;
+}
+
+.advantages {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 74px;
+}
+
+.advantage {
+	width: 289px;
+	background: url('../img/icon1.png') no-repeat center top;
+
+}
+
+.advantage-title {
+	font-size: 19px;
+	line-height: 25px;
+	margin-top: 100px;
+	text-align: center;
+}
+
+.advantage-text {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 400;
+	color: black;
+	font-size: 15px;
+	line-height: 22px;
+	margin-top: 17px;
+	text-align: center;
+}
+
+.voyage {
+	width: 260px;
+	background: url('../img/icon2.png') no-repeat center top;
+}
+
+.value-creation {
+	background: url('../img/icon3.png') no-repeat center top;
+}
+
+/* third section*/
+
+.ticket-form-section {
+	padding-top: 105px;
+	padding-bottom: 110px;
+	background: #ecf2f8;
+}
+
+.form {
+	margin-top: 60px;
+
+}
+
+.input {
+	width: 345px;
+	height: 48px;
+	border: 1px solid #bbbbbb;
+	font-size: 15px;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 400;
+	line-height: 25px;
+	color: #201b2d;
+	padding-left: 30px;
+	display: block;
+	margin-bottom: 15px;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-form {
+	border: none;
+	cursor: pointer;
+	width: 345px;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+/* footer */
+
+.footer {
+	background: #164d7a;
+	padding: 64px 0;
+}
+
+.credits {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 25px;
+	color: #ffffff;
+	text-align: center;
+}
+
+/*font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Ubuntu', sans-serif;*/
+
+/*Java Script*/
+
+.red {
+	color: red;
+}
+
+/*.animate__animated {
+	opacity: 0;*/
+}
+
+
+/*responsive*/
+
+/* lg 992-1200px */
+@media screen and (max-width: 1200px) {
+	.conteiner {
+		width: 960px;
+	}
+	.cases {
+	    max-width: 590px;
+	    margin-right: 0;
+	}
+
+	.offer p {
+		width: auto;
+	}
+}
+
+
+/* md 768-992px */
+@media screen and (max-width: 992px) {
+	.conteiner {
+		width: 720px;
+	}
+
+	.wrapper {
+		flex-direction: column;
+		justify-content: center;
+		margin-top: 60px;
+	}
+
+	.offer {
+		width: 100%;
+	}
+ 
+
+	.offer h1 {
+		width: 80%;
+		text-align: center;
+		margin: 0 auto 47px;
+	}
+
+	.offer p { 
+		text-align: center;
+	}
+
+	.btn { 
+		margin: auto; 
+	}
+
+	.advantages {
+		flex-direction: column;
+		margin-left: 30px;
+	} 
+
+	.advantage {
+		width: auto;
+		background-position: left center;
+		margin-bottom: 60px;
+	}
+
+	.advantage-title, .advantage-text {
+		text-align: left;
+		margin-left: 100px;
+	}
+
+	.advantage-title {
+		margin-top: 0;
+		
+	} 
+
+
+/* sm 576-768px */
+@media screen and (max-width: 768px) {
+	.conteiner {
+		width: 540px;
+	}
+
+
+	.input, .btn {
+		width: 100%;
+	}
+
+	.cases {
+		max-width: 540px;
+	}
+
+}
+
+/* xs 320-576px */
+@media screen and (max-width: 576px) {
+	.conteiner {
+		width: 90%;
+	}
+
+		.cases {
+		max-width: 320px;
+}
+
+
